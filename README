@@ -1,0 +1,54 @@
+
+Magnum Website Starter Kit
+-------------------------------------------
+Version 1.0, July 2009, Marc Tobias Kunisch
+
+The Magnum Website Starter Kit is not a framework. It is merely a bunch 
+of files intended to be used to quickly kick off the frontend of a website 
+project with best practices in mind.
+
+The idea behind magnum is that at the beginning of a website there are 
+always certain tasks that need to be done and files to be set up. Use 
+magnum to put a basic file/html/css/js structure in place to start off from.
+
+Magnum's file structure:
+
+index.html
+static/
+	global.css
+	scratch.css
+js/
+	global.js
+	jquery.js
+
+
+Doctype:
+
+Magnum uses an html5 doctype
+http://wiki.whatwg.org/wiki/FAQ#What_will_the_DOCTYPE_be.3F
+
+
+Javascript:
+
+jQuery Framework Version 1.3.2 is included in magnum http://jquery.com/
+In global.js a class name "js" is added to the body so javascript dependant
+styles can be cascaded down to elements.
+
+
+Accessibility:
+
+A basic jump navgation for accessibility has been added into the markup.
+
+global.js puts basic WAI ARIA landmark roles in place for the key elements.
+Landmark roles are generated with Javascript so HTML can still validates in
+validators that don't know ARIA yet.
+
+
+
+scratch.css
+
+Developers can use the scratch.css file to add things that they think should
+be part of the starter kit. Once discussed with the team and agreed upon styles
+can be moved into global.css
+
+
