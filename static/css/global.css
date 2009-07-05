@@ -1,0 +1,167 @@
+/* 
+####################################################################################
+
+FILE: global stylesheet
+PROJECT: 
+AUTHOR: 
+CREATED:
+
+
+####################################################################################
+
+####################################################################################
+
+MAIN COLORS: 
+
+background 			#
+main				#
+second				#
+highlight			#
+links				#
+links hover			#
+links visited		#
+confirm				#
+errors				#
+
+
+#################################################################################### 
+
+####################################################################################
+
+TOC:
+
+* reset (just a bit)
+* general typography and basics
+* main layout elements
+* forms
+* misc
+* buttons
+
+####################################################################################
+*/
+
+/* reset
+####################################################################################
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+
+/* general typography and basics
+####################################################################################
+*/
+
+body {
+	background: #fff;
+	font: 75%/1.2 Arial, sans-serif;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+h1, 
+h2, 
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+a {
+	color: blue;
+}
+
+a:hover {
+	color: red;
+}
+
+a:visited {
+	color: purple;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after{
+	content: "";
+}
+
+q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+/* main layout elements
+####################################################################################
+*/
+
+#jumplinks {
+	position: absolute;
+	left: -999em; /* for tobs*/
+	top: -999em; /* for rik*/
+}
+
+/* forms
+####################################################################################
+*/
+
+textarea {
+	height: auto;
+	font-family: inherit;
+	font-size: 1em;
+}
+
+/* misc
+####################################################################################
+*/
+
+.todo {
+	color: red !important;
+	font-weight: bold;
+}
+
+p.todo {
+	margin: 2em 0;
+}
+
+
+/* buttons
+####################################################################################
+*/
+
+
+
