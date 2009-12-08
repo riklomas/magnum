@@ -40,7 +40,7 @@ Accessibility:
 A basic jump navgation for accessibility has been added into the markup.
 
 global.js puts basic WAI ARIA landmark roles in place for the key elements.
-Landmark roles are generated with Javascript so HTML can still validates in
+Landmark roles are generated with Javascript so HTML still validates in
 validators that don't know ARIA yet.
 
 
