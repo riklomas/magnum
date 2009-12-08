@@ -1,6 +1,7 @@
 
 Magnum Website Starter Kit
 -------------------------------------------
+
 Version 1.0, July 2009, Marc Tobias Kunisch
 
 The Magnum Website Starter Kit is not a framework. It is merely a bunch 
@@ -15,11 +16,12 @@ Magnum's file structure:
 
 index.html
 static/
-	global.css
-	scratch.css
-js/
-	global.js
-	jquery.js
+	css/
+		global.css
+		scratch.css
+	js/
+		global.js
+		jquery.js		
 
 
 Doctype:
@@ -31,18 +33,15 @@ http://wiki.whatwg.org/wiki/FAQ#What_will_the_DOCTYPE_be.3F
 Javascript:
 
 jQuery Framework Version 1.3.2 is included in magnum http://jquery.com/
-In global.js a class name "js" is added to the body so javascript dependant
-styles can be cascaded down to elements.
 
 
 Accessibility:
 
-A basic jump navgation for accessibility has been added into the markup.
+A basic jump navigation for accessibility has been added into the markup.
 
 global.js puts basic WAI ARIA landmark roles in place for the key elements.
 Landmark roles are generated with Javascript so HTML still validates in
 validators that don't know ARIA yet.
-
 
 
 scratch.css
@@ -50,5 +49,60 @@ scratch.css
 Developers can use the scratch.css file to add things that they think should
 be part of the starter kit. Once discussed with the team and agreed upon styles
 can be moved into global.css
+
+
+
+
+
+
+-------------------------------------------
+
+Version 1.1, December 2009, Marc Tobias Kunisch
+
+Added modernizr.js and sample font embedding
+
+modernizr:
+
+"Modernizr uses feature detection to test the current browser against upcoming features like rgba(), border-radius, CSS Transitions and many more. These are currently being implemented across browsers and with Modernizr you can start using them right now, with an easy way to control the fallbacks for browsers that don’t yet support them.
+
+Additionally, Modernizr creates a self-titled global JavaScript object which contains properties for each feature; if a browser supports it, the property will evaluate true and if not, it will be false.
+
+Lastly, Modernizr also adds support for styling HTML 5 elements. This allows you to use more semantic, forward-looking elements such as <section>, <header> and <dialog> without having to worry about them not working in Internet Explorer."
+http://www.modernizr.com/
+
+
+font embedding:
+
+Sample font embedding achieved with Sorts Mill Goudy
+http://www.theleagueofmoveabletype.com/fonts/6-sorts-mill-goudy
+
+using @font-face Kit from the Font Squirrel
+http://www.fontsquirrel.com/fonts/OFL-Sorts-Mill-Goudy
+
+and Paul Irish's bullet-proof @font-face syntax
+http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/
+
+
+
+files added to the project:
+
+static/
+	js/
+		modernizr.js
+	fonts/
+		OFLGoudyStM-Italic.eot
+		OFLGoudyStM-Italic.otf
+		OFLGoudyStM-Italic.svg
+		OFLGoudyStM-Italic.woff
+		OFLGoudyStM.eot
+		OFLGoudyStM.otf
+		OFLGoudyStM.svg
+		OFLGoudyStM.woff
+
+
+
+
+
+
 
 
